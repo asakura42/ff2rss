@@ -1,5 +1,5 @@
 # ff2rss
-Script that converts Firefox Bookmarks to RSS feed
+Script that converts Firefox Bookmarks to RSS feed. You need coreutils, grep, awk, sed, curl and sqlite3. You probably have it.
 
 1. Optionally (but recommend): compile https://github.com/eafer/rdrview
 2. Run ff2rss.sh and WAIT. It will build initial rss feed with all your Firefox bookmarks in `~/.local/share/bookmarks.rss`
