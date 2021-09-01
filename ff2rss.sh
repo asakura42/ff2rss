@@ -29,7 +29,6 @@ done )
 result=$(echo "$sql" | sqlite3 -separator ';;;'  /tmp/places.sqlite | sed '/getElementsByTagName/d' | sed 's/</(/g;s/>/)/g')
 
 if [[ $(head -n1 "$RSSPLACE") == '<?xml version="1.0" encoding="utf-8"?>' ]] ; then
-	rsse=1
 	true
 else
 echo '<?xml version="1.0" encoding="utf-8"?>
